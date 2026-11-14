@@ -1,0 +1,35 @@
+send_command:
+  name: Send eISCP command
+  description: Send a raw eISCP command to the configured Onkyo receiver.
+  fields:
+    command:
+      name: Command
+      description: Three-character eISCP command followed by its argument, for example NSV0A0.
+      required: true
+      selector:
+        text:
+    entry_id:
+      name: Receiver entry ID
+      description: Required only when more than one receiver is configured.
+      selector:
+        text:
+set_visibility:
+  name: Set Menu Visibility
+  description: Save dashboard checkbox choices without changing the receiver.
+  fields:
+    entry_id:
+      name: Receiver Entry ID
+      required: true
+      selector:
+        text:
+    category:
+      name: Menu
+      required: true
+      selector:
+        select:
+          options: [services, inputs, modes]
+    choices:
+      name: Visible Choice Keys
+      required: true
+      selector:
+        object:

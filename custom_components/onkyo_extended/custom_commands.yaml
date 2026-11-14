@@ -1,0 +1,4 @@
+- name: Spotify
+  type: button
+  command: NSV0A0
+  icon: mdi:spotify

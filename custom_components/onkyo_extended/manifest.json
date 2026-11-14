@@ -1,0 +1,53 @@
+{
+  "domain": "onkyo_extended",
+  "name": "Onkyo Extended",
+  "codeowners": [],
+  "config_flow": true,
+  "documentation": "https://github.com/randomname1212/onkyo-extended",
+  "iot_class": "local_push",
+  "integration_type": "device",
+  "version": "0.2.0",
+  "ssdp": [
+    {
+      "deviceType": "urn:schemas-upnp-org:device:MediaRenderer:1",
+      "manufacturer": "ONKYO"
+    },
+    {
+      "deviceType": "urn:schemas-upnp-org:device:MediaRenderer:1",
+      "manufacturer": "Onkyo & Pioneer Corporation"
+    },
+    {
+      "deviceType": "urn:schemas-upnp-org:device:MediaRenderer:1",
+      "manufacturer": "Pioneer"
+    },
+    {
+      "deviceType": "urn:schemas-upnp-org:device:MediaRenderer:2",
+      "manufacturer": "ONKYO"
+    },
+    {
+      "deviceType": "urn:schemas-upnp-org:device:MediaRenderer:2",
+      "manufacturer": "Onkyo & Pioneer Corporation"
+    },
+    {
+      "deviceType": "urn:schemas-upnp-org:device:MediaRenderer:2",
+      "manufacturer": "Pioneer"
+    },
+    {
+      "deviceType": "urn:schemas-upnp-org:device:MediaRenderer:3",
+      "manufacturer": "ONKYO"
+    },
+    {
+      "deviceType": "urn:schemas-upnp-org:device:MediaRenderer:3",
+      "manufacturer": "Onkyo & Pioneer Corporation"
+    },
+    {
+      "deviceType": "urn:schemas-upnp-org:device:MediaRenderer:3",
+      "manufacturer": "Pioneer"
+    }
+  ],
+  "dependencies": [
+    "network",
+    "http"
+  ],
+  "issue_tracker": "https://github.com/randomname1212/onkyo-extended/issues"
+}

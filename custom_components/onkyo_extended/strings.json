@@ -1,0 +1,89 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect To Onkyo Receiver",
+        "data": {
+          "host": "Receiver IP Address",
+          "port": "EISCP TCP Port"
+        }
+      },
+      "reconfigure": {
+        "title": "Receiver Address",
+        "data": {
+          "host": "Receiver IP Address",
+          "port": "EISCP TCP Port"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not connect to receiver"
+    },
+    "abort": {
+      "already_configured": "Receiver already configured",
+      "other_integration_active": "Disable the previous custom Onkyo integration for this receiver before migrating. Its settings will be copied automatically."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "menu_options": {
+          "settings": "Settings",
+          "custom_commands": "Custom Commands",
+          "discovery": "Discover Network Service",
+          "receiver": "Receiver Controls",
+          "visibility": "Show Options"
+        }
+      },
+      "settings": {
+        "title": "Network Services Settings",
+        "data": {
+          "service_delay": "Delay After Selecting NET (seconds)",
+          "verify_service": "Verify Selected Service",
+          "show_hidden_services": "Show Hidden Network Services",
+          "update_values_after_input": "Update Values After Input",
+          "update_values_periodic_timer": "Update Values Periodic Timer (minutes; 0.5 = 30 Seconds; 0 Disables)"
+        }
+      },
+      "custom_commands": {
+        "title": "Custom EISCP Entities",
+        "data": {
+          "custom_commands_yaml": "Custom Command YAML"
+        }
+      },
+      "discovery": {
+        "title": "Discover Active Network Service",
+        "description": "Query: {query}\\nResponse: {response}\\nDerived command: {derived}\\nStatus: {status}"
+      },
+      "discovery_test": {
+        "title": "Test Discovered Command",
+        "description": "Command: {command}\\nResult: {result}"
+      },
+      "receiver": {
+        "title": "Receiver Controls",
+        "description": "Configure volume scaling and input/listening-mode names. The HT-R997 reports a raw maximum of 82. Enter JSON mappings from two-digit hex codes to unique names. Leave a mapping empty to use detected/default names.",
+        "data": {
+          "volume_resolution": "Volume Resolution (raw Maximum)",
+          "max_volume": "Maximum Volume (%)",
+          "input_names": "Custom Input Names (JSON)",
+          "listening_modes": "Listening Modes (JSON)"
+        }
+      },
+      "visibility": {
+        "title": "Show Options",
+        "description": "Choose what appears in the dashboard menus. Hidden choices remain available to scenes and scripts. Standard device-page selectors retain all options so scene restoration remains reliable.",
+        "data": {
+          "services": "Show Network Services",
+          "inputs": "Show Input Selection",
+          "modes": "Show Listening Modes"
+        }
+      }
+    },
+    "abort": {
+      "test_failed": "Could not test the discovered command"
+    },
+    "error": {
+      "invalid_mapping": "Use a JSON object mapping two-digit hexadecimal codes to unique names."
+    }
+  }
+}
