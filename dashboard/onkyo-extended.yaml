@@ -1,0 +1,253 @@
+# Exported from the current dashboard on 14 November 2026.
+# Replace onkyo_extended_your_receiver_ and YOUR_ONKYO_DEVICE_ID with your installation values.
+title: Onkyo Extended
+views:
+  - title: Receiver
+    path: receiver
+    icon: mdi:audio-video
+    type: sections
+    max_columns: 3
+    sections:
+      - type: grid
+        cards:
+          - type: heading
+            heading: Main Zone
+            icon: mdi:audio-video
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: media_player.onkyo_extended_your_receiver_main_zone
+                name: Main Zone
+          - type: custom:onkyo-choice-card
+            title: Receiver Menus
+            entities:
+              - entity: select.onkyo_extended_your_receiver_network_services
+                name: Network Services
+              - entity: select.onkyo_extended_your_receiver_input_selection
+                name: Input Selection
+              - entity: select.onkyo_extended_your_receiver_listening_modes
+                name: Listening Modes
+          - type: entities
+            title: Speaker Levels
+            show_header_toggle: false
+            entities:
+              - entity: number.onkyo_extended_your_receiver_centre_level
+                name: Centre Level
+              - entity: number.onkyo_extended_your_receiver_subwoofer_level
+                name: Subwoofer Level
+      - type: grid
+        cards:
+          - type: heading
+            heading: Remote Control
+            icon: mdi:remote
+          - type: grid
+            columns: 3
+            square: false
+            cards:
+              - type: button
+                entity: button.onkyo_extended_your_receiver_quick_menu
+                name: Quick Menu
+                icon: mdi:tune
+                show_state: false
+                tap_action:
+                  action: perform-action
+                  perform_action: button.press
+                  target:
+                    entity_id: button.onkyo_extended_your_receiver_quick_menu
+              - type: button
+                entity: button.onkyo_extended_your_receiver_osd_up
+                name: Up
+                icon: mdi:chevron-up
+                show_state: false
+                tap_action:
+                  action: perform-action
+                  perform_action: button.press
+                  target:
+                    entity_id: button.onkyo_extended_your_receiver_osd_up
+              - type: button
+                entity: button.onkyo_extended_your_receiver_volume_up
+                name: Volume +
+                icon: mdi:volume-plus
+                show_state: false
+                tap_action:
+                  action: perform-action
+                  perform_action: button.press
+                  target:
+                    entity_id: button.onkyo_extended_your_receiver_volume_up
+              - type: button
+                entity: button.onkyo_extended_your_receiver_osd_left
+                name: Left
+                icon: mdi:chevron-left
+                show_state: false
+                tap_action:
+                  action: perform-action
+                  perform_action: button.press
+                  target:
+                    entity_id: button.onkyo_extended_your_receiver_osd_left
+              - type: button
+                entity: button.onkyo_extended_your_receiver_osd_enter
+                name: Enter
+                icon: mdi:check-circle-outline
+                show_state: false
+                tap_action:
+                  action: perform-action
+                  perform_action: button.press
+                  target:
+                    entity_id: button.onkyo_extended_your_receiver_osd_enter
+              - type: button
+                entity: button.onkyo_extended_your_receiver_osd_right
+                name: Right
+                icon: mdi:chevron-right
+                show_state: false
+                tap_action:
+                  action: perform-action
+                  perform_action: button.press
+                  target:
+                    entity_id: button.onkyo_extended_your_receiver_osd_right
+              - type: button
+                entity: button.onkyo_extended_your_receiver_osd_back
+                name: Back
+                icon: mdi:arrow-u-left-top
+                show_state: false
+                tap_action:
+                  action: perform-action
+                  perform_action: button.press
+                  target:
+                    entity_id: button.onkyo_extended_your_receiver_osd_back
+              - type: button
+                entity: button.onkyo_extended_your_receiver_osd_down
+                name: Down
+                icon: mdi:chevron-down
+                show_state: false
+                tap_action:
+                  action: perform-action
+                  perform_action: button.press
+                  target:
+                    entity_id: button.onkyo_extended_your_receiver_osd_down
+              - type: button
+                entity: button.onkyo_extended_your_receiver_volume_down
+                name: Volume −
+                icon: mdi:volume-minus
+                show_state: false
+                tap_action:
+                  action: perform-action
+                  perform_action: button.press
+                  target:
+                    entity_id: button.onkyo_extended_your_receiver_volume_down
+          - type: grid
+            columns: 3
+            square: false
+            cards:
+              - type: button
+                entity: button.onkyo_extended_your_receiver_movie_tv
+                name: Movie/TV
+                icon: mdi:movie-open
+                show_state: false
+                tap_action:
+                  action: perform-action
+                  perform_action: button.press
+                  target:
+                    entity_id: button.onkyo_extended_your_receiver_movie_tv
+              - type: button
+                entity: button.onkyo_extended_your_receiver_music
+                name: Music
+                icon: mdi:music
+                show_state: false
+                tap_action:
+                  action: perform-action
+                  perform_action: button.press
+                  target:
+                    entity_id: button.onkyo_extended_your_receiver_music
+              - type: button
+                entity: button.onkyo_extended_your_receiver_game
+                name: Game
+                icon: mdi:controller
+                show_state: false
+                tap_action:
+                  action: perform-action
+                  perform_action: button.press
+                  target:
+                    entity_id: button.onkyo_extended_your_receiver_game
+              - type: button
+                entity: button.onkyo_extended_your_receiver_shuffle
+                name: Shuffle
+                icon: mdi:shuffle
+                show_state: false
+                tap_action:
+                  action: perform-action
+                  perform_action: button.press
+                  target:
+                    entity_id: button.onkyo_extended_your_receiver_shuffle
+              - type: button
+                entity: button.onkyo_extended_your_receiver_settings
+                name: Settings
+                icon: mdi:cog
+                show_state: false
+                tap_action:
+                  action: perform-action
+                  perform_action: button.press
+                  target:
+                    entity_id: button.onkyo_extended_your_receiver_settings
+              - type: button
+                entity: button.onkyo_extended_your_receiver_network_settings
+                name: Network Settings
+                icon: mdi:network
+                show_state: false
+                tap_action:
+                  action: perform-action
+                  perform_action: button.press
+                  target:
+                    entity_id: button.onkyo_extended_your_receiver_network_settings
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: media_player.onkyo_extended_your_receiver_zone_2
+                name: Zone 2
+          - type: button
+            name: All Controls And Device Settings
+            icon: mdi:tune
+            tap_action:
+              action: navigate
+              navigation_path: /config/devices/device/YOUR_ONKYO_DEVICE_ID
+      - type: grid
+        cards:
+          - type: heading
+            heading: Receiver Status
+            icon: mdi:information-outline
+          - type: entities
+            title: Current Input And Signal
+            show_header_toggle: false
+            entities:
+              - entity: sensor.onkyo_extended_your_receiver_current_input
+                name: Input
+              - entity: sensor.onkyo_extended_your_receiver_current_network_service
+                name: Network Service
+              - entity: sensor.onkyo_extended_your_receiver_current_listening_mode
+                name: Listening Mode
+              - entity: sensor.onkyo_extended_your_receiver_audio_format
+                name: Audio Format
+              - entity: sensor.onkyo_extended_your_receiver_audio_output_channels
+                name: Output Channels
+              - entity: sensor.onkyo_extended_your_receiver_video_output_resolution
+                name: Video Output
+          - type: entities
+            title: Refresh And Diagnostics
+            show_header_toggle: false
+            entities:
+              - entity: button.onkyo_extended_your_receiver_manual_refresh
+                name: Refresh Basic Readings
+              - entity: button.onkyo_extended_your_receiver_refresh_extended_information
+                name: Refresh Signal And Levels
+              - entity: number.onkyo_extended_your_receiver_update_values_periodic_timer
+                name: Periodic Timer (minutes)
+              - entity: switch.onkyo_extended_your_receiver_update_values_after_input
+                name: Confirm Values After Actions
+              - entity: switch.onkyo_extended_your_receiver_include_extended_information_in_refresh
+                name: Include Signal And Levels
+              - entity: sensor.onkyo_extended_your_receiver_last_query_result
+                name: Last Query
+              - entity: sensor.onkyo_extended_your_receiver_last_refresh_completed
+                name: Last Refresh
+              - entity: sensor.onkyo_extended_your_receiver_consecutive_query_failures
+                name: Query Failures
+
