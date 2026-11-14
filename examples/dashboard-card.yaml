@@ -1,0 +1,9 @@
+# Replace these example entity IDs with the entities in your installation.
+type: custom:onkyo-choice-card
+entities:
+  - entity: select.your_receiver_network_services
+    name: Network Services
+  - entity: select.your_receiver_input_selection
+    name: Input Selection
+  - entity: select.your_receiver_listening_modes
+    name: Listening Modes
